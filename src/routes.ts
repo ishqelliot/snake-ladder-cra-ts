@@ -18,6 +18,7 @@ import NotificationsPage from './views/Notifications/Notifications';
 import UpgradeToPro from './views/UpgradeToPro/UpgradeToPro';
 // core components/views for RTL layout
 import RTLPage from './views/RTLPage/RTLPage';
+import UserForm from './views/UserForm/userForm';
 
 const dashboardRoutes = [
   {
@@ -91,6 +92,13 @@ const dashboardRoutes = [
     icon: Language,
     component: RTLPage,
     layout: '/rtl'
+  },
+  {
+    path: '/user-form',
+    name: 'User Form',
+    icon: 'sdf',
+    component: UserForm,
+    layout: '/forms'
   }
 ];
 

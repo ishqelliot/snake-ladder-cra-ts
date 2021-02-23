@@ -6,6 +6,7 @@ import { Router, Route, Switch, Redirect } from 'react-router-dom';
 // core components
 import Admin from './layouts/Admin';
 import RTL from './layouts/RTL';
+import Forms from './layouts/forms';
 
 import 'assets/css/material-dashboard-react.css?v=1.6.0';
 
@@ -17,6 +18,7 @@ ReactDOM.render(
     <Switch>
       <Route path="/admin" component={Admin} />
       <Route path="/rtl" component={RTL} />
+      <Route path="/forms" component={Forms} />
       <Redirect from="/" to="/admin/dashboard" />
     </Switch>
   </Router>,
